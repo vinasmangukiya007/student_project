@@ -1,7 +1,7 @@
 var mongoose = require('mongoose')
 
 var db = mongoose.connection
-mongoose.connect('mongodb://127.0.0.1/student_project')
+mongoose.connect('mongodb+srv://mangukiyavinas400:<db_password>@vinas.is9q3.mongodb.net/student_project')
 db.once('open',(err)=>{
     if(err){
         console.log(err);
